@@ -1,8 +1,5 @@
 .navbar {
-  position: absolute; /* Makes it overlay the sidebar */
-  top: 0;
-  left: 300px; /* Starts right after the sidebar */
-  width: calc(100% - 250px); /* Takes the remaining width */
+  width: 100%;
   background-color: #f4f4f8;
   padding: 10px 20px;
   border-radius: 10px;

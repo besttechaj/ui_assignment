@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.container_inner1 {
+  /* border: 2px solid blue; */
+  width: 16%;
+}
+
+.container_inner2 {
+  /* border: 2px solid blue; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 0;
+}

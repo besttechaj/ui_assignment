@@ -1,0 +1,58 @@
+.navbar {
+  position: absolute; /* Makes it overlay the sidebar */
+  top: 0;
+  left: 300px; /* Starts right after the sidebar */
+  width: calc(100% - 250px); /* Takes the remaining width */
+  background-color: #f4f4f8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  z-index: 10; /* Ensures navbar is above sidebar */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.navbar ul li:first-child a {
+  color: #6a5acd;
+  font-weight: bold;
+}
+
+.navbar ul li:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* Status indicators */
+.navbar ul li:nth-child(2)::before {
+  content: '•';
+  color: green;
+  margin-right: 5px;
+}
+
+.navbar ul li:nth-child(3)::before {
+  content: '•';
+  color: red;
+  margin-right: 5px;
+}

@@ -1,0 +1,300 @@
+/* Order Details Page Styles */
+.order {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.order_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.order_header_left > h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.order_header_left > p {
+  color: green;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.order_header_right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.order_header_right > .vector_mix {
+  width: 23px;
+  height: 23px;
+  position: relative;
+}
+
+.vector_mix:hover {
+  cursor: pointer;
+}
+
+#img1 {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 8px;
+  height: 8px;
+}
+
+#img2 {
+  position: absolute;
+  top: 14px;
+  left: 3.5px;
+  bottom: 5px;
+  height: 8px;
+  width: 7px;
+}
+
+.order_header_right > .vector_opposite {
+  width: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vector_opposite:hover {
+  cursor: pointer;
+}
+
+#img4 {
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 1.6rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img4 > img {
+  /* height: 100%;
+  width: 100%; */
+}
+
+.order_header_right button {
+  background-color: white;
+  color: red;
+  padding: 7px 7px;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Navigation Tabs */
+.order_nav > ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 20px;
+}
+
+.order_nav > ul > li > a {
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+}
+
+.order_nav > ul > li > a:hover {
+  color: #8123ad;
+  border-bottom: 2px solid #8123ad;
+  padding-bottom: 0.3rem;
+}
+
+/* Order Details Section */
+.order_details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.order_details_top > h4 {
+  text-align: start;
+  font-size: 14px;
+  font-weight: 700;
+  color: #201919;
+}
+
+.order_details_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-column {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+/* .order-column-inner {
+  display: flex;
+  gap: 6rem;
+  padding: 10px 0px;
+  border: 2px solid blue;
+} */
+
+.order-column-inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* .order-column-inner1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: pink;
+} */
+
+.order-column-inner1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 180px; /* Adjust this width based on your layout */
+  text-align: right;
+}
+
+.order-column-inner1 > img {
+  width: 15px;
+  height: 15px;
+}
+
+.order-column-inner1 > p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666666;
+}
+
+/* .order-column-inner2 {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #201919;
+} */
+
+.order-column-inner2 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allows the value section to occupy remaining space */
+  font-size: 14px;
+  font-weight: 600;
+  color: #201919;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.order-column {
+  flex: 1; /* Ensures both left and right columns are equal */
+}
+
+.special {
+  background: #d4f8d4;
+  color: #008000;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+  border-radius: 15px !important;
+  font-weight: bold !important;
+}
+
+/* Timeline Section */
+.order_details_footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.order_details_footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 20px;
+  position: relative;
+  /* border: 2px solid pink; */
+}
+
+.order_details_footer > ul > li::before {
+  content: '●'; /* Unicode for a circle */
+  font-size: 12px;
+  color: #28a745; /* Adjust color as needed */
+  position: absolute;
+  left: 0;
+}
+
+.order_details_footer > ul > li > div:first-child img {
+  width: 37px;
+  height: 38px;
+}
+
+.order_details_footer > ul > li > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  text-align: start;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.order_details_footer > ul > li > div > p:nth-child(2) {
+  /* border: 2px solid red; */
+  color: #777777;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.temp {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.order_details_footer ul li p {
+  margin: 0;
+  color: #333;
+}
+
+h5 {
+  text-align: start;
+  font-weight: 600;
+  color: #777777;
+  font-size: 16px;
+  line-height: 20.83px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.order_details_footer > ul > li > img {
+  position: absolute;
+  left: 0;
+  top: 33px;
+  height: 3.6rem;
+  width: 0.01rem;
+  background-color: rgb(144, 138, 138);
+  margin-left: 0.2rem;
+}
